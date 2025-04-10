@@ -11,6 +11,16 @@
 
 }
 
+body
+{
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+
+}
+
 .header
 {
 
@@ -28,6 +38,33 @@
     background-color: #1F2937;
     color: #E5E7EB;
 
+    flex: 0;
+
+}
+
+.header,
+.footer,
+.middle-content
+{
+    /*border: red 1px solid;*/
+}
+
+.middle-content
+{
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+
+}
+
+.middle-1,
+.middle-2,
+.middle-3,
+.middle-4
+{
+    flex: 1;
 }
 
 .footer
@@ -74,5 +111,62 @@
     color: #E5E7EB;
 
     min-width: 150px;
+
+}
+
+.middle-1
+{
+
+    display: flex;
+
+}
+
+.middle-1-left,
+.middle-1-right
+{
+
+    flex: 1;
+
+    padding: 20px 10px;
+
+    display: flex;
+
+}
+
+.middle-1-left
+{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.middle-1-right
+{
+
+    align-content: center;
+
+}
+
+.placeholder-text
+{
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+    background-color: #999999;
+
+    padding: 75px;
+
+
+}
+
+.sign-A,
+.sign-B,
+.sign-C
+{
+
+    flex: 1;
 
 }
